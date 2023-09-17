@@ -14,7 +14,12 @@ const itemSchema = new mongoose.Schema({
     image: String,
     price: Number,
     isActive: Boolean,
+    section: String,
 });
+
+const sectionSchema = new mongoose.Schema({
+    text: String,
+})
 
 const ticketSchema = new mongoose.Schema({
     text: String,
@@ -30,5 +35,6 @@ const ticketSchema = new mongoose.Schema({
 const User = mongoose.model('User', userSchema)
 const Item = mongoose.model('Item', itemSchema)
 const Ticket = mongoose.model('Ticket', ticketSchema)
+const Section = mongoose.model('Section', sectionSchema)
 
-module.exports = { User, Item, Ticket };
+module.exports = { User, Item, Ticket, Section };
