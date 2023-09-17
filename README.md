@@ -1,5 +1,5 @@
 # Telegram-Sell-Bot
-# # Dependencies: 
+# Dependencies: 
 node-telegram-bot-api: ^0.63.0
 nodemon(optional): ^3.0.1
 dotenv(optional): ^16.3.1
